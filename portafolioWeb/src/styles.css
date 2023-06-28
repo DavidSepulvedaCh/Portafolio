@@ -1,1 +1,11 @@
+body {
+    background: url(./assets/banner.jpg) rgba(0, 14, 15, 0.74);
+    background-size: cover;
+    /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+    background-position: center;
+    /* Centra la imagen dentro del contenedor */
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+
 /* You can add global styles to this file, and also import other style files */
