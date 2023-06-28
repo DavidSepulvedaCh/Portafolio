@@ -88,6 +88,7 @@
 .navBar .menu a:hover {
     color: #922B21;
     transform: translateY(-5px);
+
 }
 
 @keyframes maquina-de-escribir {

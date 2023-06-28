@@ -40,7 +40,7 @@
       border-radius: 15px; }
   .container #moreInformation {
     display: flex;
-    margin: 5% auto 0 auto;
+    margin: 5% auto 5% auto;
     align-items: center;
     justify-content: center;
     color: #F0F3F4;
