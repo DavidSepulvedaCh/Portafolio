@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", Tahoma, Geneva, Verdana, sans-serif; }
+
+.container {
+  margin: 20px auto;
+  width: 1250px;
+  padding: 10px;
+  text-align: center; }
+  .container .title {
+    font-weight: 600;
+    color: #fff;
+    margin: 15px 0;
+    font-size: 25px; }
+  .container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%; }
+    .container form .information {
+      display: flex;
+      width: 73%; }
+      .container form .information input[type="email"],
+      .container form .information input[type="text"] {
+        background: none;
+        padding: 15px;
+        width: 49%;
+        border: 1px solid #922a219a;
+        border-radius: 10px;
+        font-size: 15px;
+        color: #fff;
+        margin: 10px 8px; }
+    .container form textarea {
+      resize: none;
+      width: 70%;
+      height: 250px;
+      background: none;
+      border: 1px solid #922a219a;
+      border-radius: 10px;
+      color: #fff;
+      padding: 10px;
+      font-size: 15px;
+      margin: 10px 50px;
+      /* Agregado */ }
+    .container form input[type="submit"] {
+      margin: 15px;
+      /* Agregado */
+      padding: 10px;
+      background: #922a21f3;
+      color: #fff;
+      font-size: 20px;
+      border: none;
+      border-radius: 10px;
+      width: 150px;
+      cursor: pointer; }
+      .container form input[type="submit"]:hover {
+        background: #922a219a; }
+
+/*# sourceMappingURL=contact.component.css.map */

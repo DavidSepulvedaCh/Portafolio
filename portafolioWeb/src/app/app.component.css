@@ -1,4 +1,8 @@
 .active a {
-  color: #922B21; }
+  color: #922b21; }
+
+.projects {
+  background-color: #070707f3;
+  width: 100%; }
 
 /*# sourceMappingURL=app.component.css.map */

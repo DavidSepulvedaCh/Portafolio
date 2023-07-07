@@ -6,7 +6,7 @@ import { ProjectsComponent } from "./projects/projects.component";
 import { AboutComponent } from "./about/about.component";
 
 const appRoutes: Routes = [
-    { path: 'home', component: HomeComponent },
+    { path: '', component: HomeComponent },
     { path: 'projects', component: ProjectsComponent },
     { path: 'about', component: AboutComponent },
     { path: '**', component: HomeComponent },

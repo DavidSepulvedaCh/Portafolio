@@ -6,7 +6,7 @@
 .container {
   width: 1250px;
   margin: auto;
-  font-family: 'Open Sans', Tahoma, Geneva, Verdana, sans-serif; }
+  font-family: "Open Sans", Tahoma, Geneva, Verdana, sans-serif; }
   .container .content {
     display: flex;
     margin-top: 6%;
@@ -19,13 +19,13 @@
       transition: opacity 0.5s ease, transform 0.5s ease; }
       .container .content .information .title {
         font-weight: 300;
-        color: #F0F3F4;
+        color: #f0f3f4;
         margin-bottom: 25px; }
         .container .content .information .title span {
           font-weight: 600;
-          color: #922B21; }
+          color: #922b21; }
       .container .content .information .description {
-        color: #F0F3F4;
+        color: #f0f3f4;
         font-size: 25px;
         font-weight: 200; }
     .container .content .photo {
@@ -40,13 +40,15 @@
       border-radius: 15px; }
   .container #moreInformation {
     display: flex;
-    margin: 5% auto 5% auto;
+    margin: 5% auto 3% auto;
     align-items: center;
     justify-content: center;
-    color: #F0F3F4;
+    color: #f0f3f4;
     animation: rebote-infinito 1s infinite; }
-  .container .ol {
-    color: #F0F3F4; }
+
+.contact {
+  width: 100%;
+  background: #0000005b; }
 
 @keyframes rebote-infinito {
   0% {
