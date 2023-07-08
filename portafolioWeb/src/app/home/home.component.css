@@ -98,8 +98,11 @@
         justify-content: center;
         align-items: center;
         text-align: justify;
-        padding: 5px;
+        padding: 8px;
         margin-top: 10px; }
+        .proyectos .projects .project .description p {
+          text-align: justify;
+          margin-right: 18px; }
       .proyectos .projects .project .technologies {
         position: absolute;
         bottom: 18%;

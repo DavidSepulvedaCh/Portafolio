@@ -110,8 +110,13 @@
                 justify-content: center;
                 align-items: center;
                 text-align: justify;
-                padding: 5px;
+                padding: 8px;
                 margin-top: 10px;
+
+                p {
+                    text-align: justify;
+                    margin-right: 18px;
+                }
             }
 
             .technologies {
