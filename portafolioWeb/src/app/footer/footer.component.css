@@ -27,6 +27,16 @@
         color: #fff;
         font-size: 30px;
         margin-right: 15px; }
+      .container .contacts .contact #linkedin:hover {
+        color: #0077b5; }
+      .container .contacts .contact #git:hover {
+        color: #181717; }
+      .container .contacts .contact #whats:hover {
+        color: #25d366; }
+      .container .contacts .contact #insta:hover {
+        color: #c13584; }
+      .container .contacts .contact #email:hover {
+        color: #d44638; }
   .container .techs {
     width: 49%;
     display: flex;

@@ -5,8 +5,8 @@
   background-color: #070707f3;
   width: 100%; }
 
-.footer {
-  width: 100%;
-  background-color: #000; }
+footer {
+  height: 150px;
+  width: 100%; }
 
 /*# sourceMappingURL=app.component.css.map */

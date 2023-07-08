@@ -10,7 +10,7 @@ import { ProjectService } from '../services/project.service';
 })
 export class ProjectsComponent implements OnInit {
   public titulo: string = "Proyectos";
-  public descripcion: string = "A continuación algunos de mis proyectos realizados a lo largo de mi formación academica"
+  public descripcion: string = "A continuación algunos de mis proyectos realizados a lo largo de mi formación academica";
   public projects: Array<Project> | undefined;
   constructor(
     private _projectService: ProjectService

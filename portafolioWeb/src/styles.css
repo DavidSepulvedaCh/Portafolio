@@ -1,11 +1,29 @@
 body {
-    background: url(./assets/banner.jpg) rgba(0, 14, 15, 0.74);
+    background: url(./assets/banner.jpg) rgba(0, 14, 15, 0.78);
     background-size: cover;
-    /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
     background-position: center;
-    /* Centra la imagen dentro del contenedor */
     background-repeat: no-repeat;
     background-blend-mode: darken;
 }
 
-/* You can add global styles to this file, and also import other style files */
+/* Estilo de la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #581e1e;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #350909;
+}
+
+footer {
+    background: #000000;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}

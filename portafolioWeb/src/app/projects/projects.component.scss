@@ -29,10 +29,12 @@
     }
     .projects {
         display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
         .project {
             padding: 8px;
-            margin: 5% 5%;
-            width: 30%;
+            margin: 20px auto; /* Ajusta los márgenes para permitir espacio entre los proyectos */
+            width: 28%;
             height: 300px;
             background: #0000007a;
             background-blend-mode: darken;
@@ -97,33 +99,6 @@
                     color: #f0f3f4;
                 }
             }
-        }
-    }
-    #btnProjects {
-        position: relative;
-        width: 14%;
-        display: flex;
-        text-decoration: none;
-        color: #f0f3f4;
-        justify-content: flex-end;
-        text-align: center;
-        padding: 8px;
-        margin-bottom: 30px;
-        background-color: rgba(20, 20, 20, 0.37); /* Establece un color de fondo semi-transparente */
-        backdrop-filter: blur(1px);
-        border-radius: 5px;
-        &:after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background-color: #922b21; /* Color del borde inferior */
-            transition: width 0.3s ease;
-        }
-        &:hover::after {
-            width: 100%;
         }
     }
 }

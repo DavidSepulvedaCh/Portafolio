@@ -1,1 +1,29 @@
-<p>about works!</p>
+<div class="container">
+    <h1 class="title">Habilidades</h1>
+    <p>Cuento con conocimientos en las siguientes tecnologías para el desarrollo FrontEnd</p>
+    <div class="content">
+        <div class="lenguajes">
+            <h3 class="titleLenguajes">Lenguajes: </h3>
+            <ul *ngFor="let skill of skills">
+                <li *ngIf="skill.type === 'Lenguaje'">
+                    <i class="fa-brands" [ngClass]="'fa-' + skill.name.toLowerCase()"></i>
+                    <span *ngIf="skill.name=='SQL'" id="sql">SQL</span>
+                    <progress value="{{skill.level}}" max="100"></progress>
+                </li>
+            </ul>
+        </div>
+        <div class="frameworks">
+            <h3 class="titleFrameworks">Frameworks: </h3>
+            <ul *ngFor="let skill of skills">
+                <li *ngIf="skill.type === 'Framework'">
+                    <i class="fa-brands" [ngClass]="'fa-' + skill.name.toLowerCase()"></i>
+                    <progress value="{{skill.level}}" max="100"></progress>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <p>Tambien tengo conocimientos en lenguajes tales como: Python, Dart(Flutter), C#, gestores de BD no relacionales
+        como MongoDB. Conocimientos en programas de
+        UX/UI: AdobeXD,
+        Figma.</p>
+</div>
