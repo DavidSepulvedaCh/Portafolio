@@ -1,8 +1,9 @@
 <div class="container">
-    <h1 class="title">Habilidades</h1>
-    <p>Cuento con conocimientos en las siguientes tecnologías para el desarrollo FrontEnd</p>
+    <h1 class="title" data-aos="fade-down-right">Habilidades</h1>
+    <p data-aos="fade-down-right">Cuento con conocimientos en las siguientes tecnologías para el desarrollo Front-End
+    </p>
     <div class="content">
-        <div class="lenguajes">
+        <div class="lenguajes" data-aos="fade-right">
             <h3 class="titleLenguajes">Lenguajes: </h3>
             <ul *ngFor="let skill of skills">
                 <li *ngIf="skill.type === 'Lenguaje'">
@@ -12,7 +13,7 @@
                 </li>
             </ul>
         </div>
-        <div class="frameworks">
+        <div class="frameworks" data-aos="fade-left">
             <h3 class="titleFrameworks">Frameworks: </h3>
             <ul *ngFor="let skill of skills">
                 <li *ngIf="skill.type === 'Framework'">
@@ -22,8 +23,9 @@
             </ul>
         </div>
     </div>
-    <p>Tambien tengo conocimientos en lenguajes tales como: Python, Dart(Flutter), C#, gestores de BD no relacionales
+    <p>También tengo conocimientos en lenguajes tales como: Python, Dart(Flutter), C#, gestores de BD no relacionales
         como MongoDB. Conocimientos en programas de
         UX/UI: AdobeXD,
-        Figma.</p>
+        Figma.
+    </p>
 </div>

@@ -22,4 +22,9 @@ export class ProjectsComponent implements OnInit {
     this.projects = this._projectService.getProjects();
   }
 
+  redireccionar(url: string) {
+    console.log(url); // Verificar el enlace en la consola
+    window.open(url, '_blank');
+  }
+
 }

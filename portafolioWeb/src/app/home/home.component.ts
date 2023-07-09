@@ -20,4 +20,9 @@ export class HomeComponent {
     console.log(this.displayedProjects);
   }
 
+  redireccionar(url: string) {
+    console.log(url); // Verificar el enlace en la consola
+    window.open(url, '_blank');
+  }
+
 }
