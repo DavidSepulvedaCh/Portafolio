@@ -53,7 +53,6 @@
     margin-right: 25px;
 }
 
-
 .navBar .menu .icons {
     display: flex;
     align-items: flex-end;
@@ -101,4 +100,48 @@
     }
 }
 
-/*# sourceMappingURL=app.component.css.map */
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .navBar {
+        flex-direction: column;
+    }
+
+    .navBar .information {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navBar .menu {
+        width: 100%;
+        margin-top: 20px;
+        flex-direction: column;
+        /* Agregado */
+        align-items: center;
+        /* Agregado */
+    }
+
+    .navBar .menu .items {
+        justify-content: center;
+        margin-left: 0;
+        margin-right: 0;
+        gap: 20px;
+    }
+
+    .navBar .menu .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .navBar .menu .icons i {
+        font-size: 24px;
+    }
+}

@@ -13,6 +13,7 @@
         color: #f0f3f4;
         justify-content: flex-end;
         width: 100%;
+
         h1 {
             display: flex;
             justify-content: flex-end;
@@ -21,19 +22,22 @@
             padding-bottom: 2px;
             margin-bottom: 8px;
         }
+
         p {
             display: flex;
             justify-content: flex-end;
             text-align: end;
         }
     }
+
     .projects {
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 20px;
+
         .project {
             padding: 8px;
-            margin: 20px auto; /* Ajusta los márgenes para permitir espacio entre los proyectos */
+            margin: 20px auto;
             width: 28%;
             height: 300px;
             background: #0000007a;
@@ -45,6 +49,7 @@
             position: relative;
             transition: transform 0.3s ease;
             cursor: pointer;
+
             .titleProject {
                 display: flex;
                 color: #f0f3f4;
@@ -75,6 +80,7 @@
                 text-align: center;
                 margin: 0;
             }
+
             .languages {
                 display: flex;
                 justify-content: center;
@@ -82,6 +88,7 @@
                 bottom: 5%;
                 left: 0;
                 right: 0;
+
                 i {
                     margin: 18px;
                     font-size: 25px;
@@ -90,14 +97,29 @@
                     margin: 0 10px;
                 }
             }
+
             &:hover {
                 background-color: rgba(2, 2, 2, 0.856);
                 transform: translateY(-5px);
                 box-shadow: 0.1px 1px 1px 2px #922a2125;
+
                 .description {
                     visibility: visible;
                     color: #f0f3f4;
                 }
+            }
+        }
+    }
+}
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        .projects {
+            width: 100%;
+            flex-direction: column;
+            .project {
+                width: 100%;
+                margin: 20px auto;
             }
         }
     }

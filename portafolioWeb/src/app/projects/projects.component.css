@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0; }
@@ -30,7 +29,6 @@
     .container .projects .project {
       padding: 8px;
       margin: 20px auto;
-      /* Ajusta los márgenes para permitir espacio entre los proyectos */
       width: 28%;
       height: 300px;
       background: #0000007a;
@@ -87,5 +85,15 @@
         .container .projects .project:hover .description {
           visibility: visible;
           color: #f0f3f4; }
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%; }
+    .container .projects {
+      width: 100%;
+      flex-direction: column; }
+      .container .projects .project {
+        width: 100%;
+        margin: 20px auto; } }
 
 /*# sourceMappingURL=projects.component.css.map */

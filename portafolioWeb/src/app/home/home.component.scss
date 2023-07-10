@@ -212,3 +212,55 @@
         transform: rotate(30deg);
     }
 }
+
+@media (max-width: 600px) {
+    .container {
+        width: 98%;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10%;
+
+        .information {
+            width: 100%;
+            transform: none;
+            margin-bottom: 20px;
+        }
+
+        .photo {
+            width: 95%;
+            height: auto;
+            max-width: 600px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .proyectos {
+        width: 100%;
+
+        .titleComponent {
+            justify-content: flex-start;
+
+            h1 {
+                text-align: start;
+            }
+
+            p {
+                text-align: start;
+            }
+        }
+
+        .projects {
+            .project {
+                width: 95%;
+                margin: 20px 0;
+            }
+        }
+
+        #btnProjects {
+            width: 100%;
+        }
+    }
+}

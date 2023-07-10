@@ -1,62 +1,94 @@
+@charset "UTF-8";
 * {
   margin: 0;
-  padding: 0;
-  font-family: "Open Sans", Tahoma, Geneva, Verdana, sans-serif; }
+  padding: 0; }
 
 .container {
   margin: 70px auto;
   width: 1250px;
   padding: 10px;
-  text-align: center; }
+  text-align: center;
+  font-family: "Open Sans", Tahoma, Geneva, Verdana, sans-serif; }
   .container .title {
-    font-weight: 600;
+    font-weight: 500;
     color: #fff;
-    margin: 15px 0;
-    font-size: 25px; }
-  .container form {
+    margin-top: 15px;
+    font-size: 30px; }
+  .container .description {
+    color: #fff;
+    margin-bottom: 35px; }
+  .container .content {
     display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px; }
+    .container .content .fila1,
+    .container .content .fila2 {
+      align-items: flex-start; }
+      .container .content .fila1 section,
+      .container .content .fila2 section {
+        display: flex;
+        align-items: center; }
+        .container .content .fila1 section a,
+        .container .content .fila2 section a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 20px; }
+        .container .content .fila1 section i,
+        .container .content .fila2 section i {
+          color: #fff;
+          font-size: 25px;
+          margin-right: 10px; }
+      .container .content .fila1 .email,
+      .container .content .fila1 .phone,
+      .container .content .fila1 .git,
+      .container .content .fila1 .linkedin,
+      .container .content .fila2 .email,
+      .container .content .fila2 .phone,
+      .container .content .fila2 .git,
+      .container .content .fila2 .linkedin {
+        margin-bottom: 30px;
+        transition: transform 0.3s ease; }
+        .container .content .fila1 .email:hover,
+        .container .content .fila1 .phone:hover,
+        .container .content .fila1 .git:hover,
+        .container .content .fila1 .linkedin:hover,
+        .container .content .fila2 .email:hover,
+        .container .content .fila2 .phone:hover,
+        .container .content .fila2 .git:hover,
+        .container .content .fila2 .linkedin:hover {
+          border-bottom: 1px solid #fff;
+          transform: translateY(-3px); }
+
+@media screen and (max-width: 600px) {
+  /* Estilos para pantallas menores a 600px */
+  .container {
+    width: 100%;
+    /* Cambiamos el ancho a 100% */
+    margin: 30px auto;
+    /* Reducimos el margen superior */
+    padding: 5px;
+    /* Reducimos el padding */ }
+
+  .content {
     flex-direction: column;
+    /* Cambiamos la dirección a columna */
     align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    width: 100%; }
-    .container form .information {
-      display: flex;
-      width: 73%; }
-      .container form .information input[type="email"],
-      .container form .information input[type="text"] {
-        background: none;
-        padding: 15px;
-        width: 49%;
-        border: 1px solid #922a219a;
-        border-radius: 10px;
-        font-size: 15px;
-        color: #fff;
-        margin: 10px 8px; }
-    .container form textarea {
-      resize: none;
-      width: 70%;
-      height: 250px;
-      background: none;
-      border: 1px solid #922a219a;
-      border-radius: 10px;
-      color: #fff;
-      padding: 10px;
-      font-size: 15px;
-      margin: 10px 50px;
-      /* Agregado */ }
-    .container form input[type="submit"] {
-      margin: 15px;
-      /* Agregado */
-      padding: 10px;
-      background: #922a21f3;
-      color: #fff;
-      font-size: 20px;
-      border: none;
-      border-radius: 10px;
-      width: 150px;
-      cursor: pointer; }
-      .container form input[type="submit"]:hover {
-        background: #922a219a; }
+    /* Centramos los elementos */
+    margin-bottom: 20px; }
+    .content .fila1,
+    .content .fila2 {
+      width: 100%;
+      /* Establecemos el ancho al 100% */
+      align-items: center;
+      /* Centramos los elementos verticalmente */
+      margin-bottom: 20px; }
+      .content .fila1 section a,
+      .content .fila2 section a {
+        font-size: 18px;
+        /* Reducimos el tamaño de fuente */ }
+      .content .fila1 section i,
+      .content .fila2 section i {
+        font-size: 20px;
+        /* Reducimos el tamaño de fuente */ } }
 
 /*# sourceMappingURL=contact.component.css.map */

@@ -12,13 +12,13 @@ progress {
     margin-left: 10px;
     margin-bottom: 5px;
     height: 8px;
-    width: 150px; /* Ajusta el ancho según tus necesidades */
+    width: 150px;
     border: none;
     border-radius: 3px;
 }
 
 progress::-webkit-progress-bar {
-    background-color: #ffff;
+    background-color: #fff;
     border-radius: 5px;
 }
 
@@ -29,21 +29,22 @@ progress::-webkit-progress-value {
 
 .title {
     font-weight: 500;
-    color: #ffff;
+    color: #fff;
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 p {
     font-weight: 300;
-    color: #ffff;
+    color: #fff;
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     margin-bottom: 15px;
 }
 
 .content {
     display: flex;
+    flex-wrap: wrap;
     margin: 50px auto;
-    color: #ffff;
+    color: #fff;
     justify-content: space-around;
 }
 
@@ -125,5 +126,12 @@ li {
         #Intermedio {
             color: rgb(218, 218, 0);
         }
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 98%;
+        margin: auto;
     }
 }
