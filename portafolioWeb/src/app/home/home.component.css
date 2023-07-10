@@ -14,7 +14,7 @@
     align-items: center; }
     .container .content .information {
       padding: 20px;
-      width: 70%;
+      width: 60%;
       transform: translateY(20px);
       transition: opacity 0.5s ease, transform 0.5s ease; }
       .container .content .information .title {
@@ -180,20 +180,18 @@
     transform: rotate(30deg); } }
 @media (max-width: 600px) {
   .container {
-    width: 98%; }
+    width: 100%; }
 
   .content {
     flex-direction: column;
     align-items: center;
     margin-top: 10%; }
     .content .information {
-      width: 100%;
-      transform: none;
+      width: 90%;
       margin-bottom: 20px; }
     .content .photo {
-      width: 95%;
+      width: 100%;
       height: auto;
-      max-width: 600px;
       margin-bottom: 20px; }
 
   .proyectos {
