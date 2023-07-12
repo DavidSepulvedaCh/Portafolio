@@ -114,7 +114,15 @@
     .navBar .information {
         width: 100%;
         text-align: center;
+        justify-content: center;
+        align-items: center;
+
     }
+
+    .navBar .information p {
+        animation: none;
+    }
+
 
     .navBar .menu {
         width: 100%;

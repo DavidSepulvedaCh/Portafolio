@@ -5,7 +5,7 @@
     </div>
     <div class="projects">
         <div class="project" *ngFor="let project of projects" [style.background-image]="'url(' + project.image + ')'"
-            (click)="redireccionar(project.link)" data-aos="fade-up-left">
+            (click)="redireccionar(project.link)" data-aos="fade-up">
             <h3 class="titleProject">{{ project.name }}</h3>
             <p class="description">{{ project.description }}</p>
             <p class="technologies">Tecnologias utilizadas</p>

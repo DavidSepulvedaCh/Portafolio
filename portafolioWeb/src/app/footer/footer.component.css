@@ -59,11 +59,24 @@
 
 @media (max-width: 600px) {
   .container {
-    width: 98%; }
+    width: 95%;
+    margin: auto; }
 
   .contacts,
   .techs {
     width: 100%; }
+
+  .techs {
+    justify-content: center;
+    align-items: flex-start; }
+    .techs .lenguajes {
+      flex-wrap: wrap;
+      justify-content: center; }
+      .techs .lenguajes i {
+        margin-bottom: 10px; }
+      .techs .lenguajes #sql {
+        width: 100%;
+        text-align: center; }
 
   .contacts {
     margin-bottom: 20px; }

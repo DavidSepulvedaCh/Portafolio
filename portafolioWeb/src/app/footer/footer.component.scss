@@ -90,12 +90,31 @@
 
 @media (max-width: 600px) {
     .container {
-        width: 98%;
+        width: 95%;
+        margin: auto;
     }
 
     .contacts,
     .techs {
         width: 100%;
+    }
+    .techs {
+        justify-content: center;
+        align-items: flex-start;
+
+        .lenguajes {
+            flex-wrap: wrap;
+            justify-content: center;
+
+            i {
+                margin-bottom: 10px;
+            }
+
+            #sql {
+                width: 100%;
+                text-align: center;
+            }
+        }
     }
 
     .contacts {
