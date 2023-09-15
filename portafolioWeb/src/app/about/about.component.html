@@ -5,27 +5,31 @@
     <div class="content">
         <div class="lenguajes" data-aos="fade-up">
             <h3 class="titleLenguajes">Lenguajes: </h3>
-            <ul *ngFor="let skill of skills">
-                <li *ngIf="skill.type === 'Lenguaje'">
-                    <i class="fa-brands" [ngClass]="'fa-' + skill.name.toLowerCase()"></i>
-                    <span *ngIf="skill.name=='SQL'" id="sql">SQL</span>
-                    <progress value="{{skill.level}}" max="100"></progress>
-                </li>
-            </ul>
+            <div class="gg">
+                <ul>
+                    <li *ngFor="let skill of skills">
+                        <ng-container *ngIf="skill.type === 'Lenguaje'">
+                            <i class="fa-brands" [ngClass]="'fa-' + skill.name.toLowerCase()"></i>
+                            <span *ngIf="skill.name === 'SQL'" id="sql">SQL</span>
+                        </ng-container>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="frameworks" data-aos="fade-down">
             <h3 class="titleFrameworks">Frameworks: </h3>
-            <ul *ngFor="let skill of skills">
-                <li *ngIf="skill.type === 'Framework'">
-                    <i class="fa-brands" [ngClass]="'fa-' + skill.name.toLowerCase()"></i>
-                    <progress value="{{skill.level}}" max="100"></progress>
-                </li>
-            </ul>
+            <div class="gg">
+                <ul>
+                    <li *ngFor="let skill of skills">
+                        <ng-container *ngIf="skill.type === 'Framework'">
+                            <i class="fa-brands" [ngClass]="'fa-' + skill.name.toLowerCase()"></i>
+                            <span *ngIf="skill.name === 'Django'" id="django">Django</span>
+                        </ng-container>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
     <p>También tengo conocimientos en lenguajes tales como: Python, Dart(Flutter), C#, gestores de BD no relacionales
-        como MongoDB. Conocimientos en programas de
-        UX/UI: AdobeXD,
-        Figma.
-    </p>
+        como MongoDB. Conocimientos en programas de UX/UI: AdobeXD, Figma.</p>
 </div>

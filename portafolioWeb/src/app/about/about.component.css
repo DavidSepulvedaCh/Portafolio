@@ -1,10 +1,12 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 .container {
   width: 1250px;
-  margin: 50px auto; }
+  margin: 50px auto;
+}
 
 progress {
   margin-left: 10px;
@@ -12,85 +14,155 @@ progress {
   height: 8px;
   width: 150px;
   border: none;
-  border-radius: 3px; }
+  border-radius: 3px;
+}
 
 progress::-webkit-progress-bar {
   background-color: #fff;
-  border-radius: 5px; }
+  border-radius: 5px;
+}
 
 progress::-webkit-progress-value {
   background-color: #922b21;
-  border-radius: 5px; }
+  border-radius: 5px;
+}
 
 .title {
   font-weight: 500;
   color: #fff;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif; }
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
 
 p {
   font-weight: 300;
   color: #fff;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+}
 
 .content {
   display: flex;
   flex-wrap: wrap;
   margin: 50px auto;
   color: #fff;
-  justify-content: space-around; }
+  justify-content: space-around;
+  width: 100%;
+}
 
 h3,
 li {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif; }
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.lenguajes,
+.frameworks {
+  border-radius: 15px;
+  background-color: rgba(49, 49, 49, 0.37);
+  width: 45%;
+  padding: 10px;
+
+}
+
 
 .lenguajes .titleLenguajes {
   font-size: 25px;
   font-weight: 400;
-  margin-bottom: 8px; }
-.lenguajes ul {
-  margin: 0 0 5px 15px;
-  list-style-type: none; }
-  .lenguajes ul #sql {
-    margin-left: -10px; }
-  .lenguajes ul i {
-    margin-right: 10px;
-    margin-left: 10px;
-    font-size: 30px;
-    vertical-align: middle; }
-  .lenguajes ul span {
-    vertical-align: middle; }
-  .lenguajes ul progress {
-    vertical-align: middle; }
-  .lenguajes ul #Avanzado {
-    color: #00cf00; }
-  .lenguajes ul #Intermedio {
-    color: #dada00; }
+  margin-bottom: 8px;
+}
+
+.gg {
+  margin-top: 25px;
+
+  justify-content: center;
+}
+
+.lenguajes ul,
+.frameworks ul {
+  margin: 0 0 15px 15px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.lenguajes ul #sql {
+  margin-left: -10px;
+}
+
+.lenguajes ul #django {
+  margin-left: -10px;
+}
+
+.lenguajes ul i {
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+.lenguajes ul span {
+  vertical-align: middle;
+}
+
+.lenguajes ul progress {
+  vertical-align: middle;
+}
+
+.lenguajes ul #Avanzado {
+  color: #00cf00;
+}
+
+.lenguajes ul #Intermedio {
+  color: #dada00;
+}
 
 .frameworks .titleFrameworks {
   font-size: 25px;
   font-weight: 400;
-  margin-bottom: 8px; }
-.frameworks ul {
-  margin: 0 0 5px 15px;
-  list-style-type: none; }
-  .frameworks ul i {
-    margin-right: 10px;
-    margin-left: 10px;
-    font-size: 30px;
-    vertical-align: middle; }
-  .frameworks ul span {
-    vertical-align: middle; }
-  .frameworks ul progress {
-    vertical-align: middle; }
-  .frameworks ul #Avanzado {
-    color: #00cf00; }
-  .frameworks ul #Intermedio {
-    color: #dada00; }
+  margin-bottom: 8px;
+}
+
+
+
+.frameworks ul i {
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+.frameworks ul span {
+  vertical-align: middle;
+}
+
+.frameworks ul progress {
+  vertical-align: middle;
+}
+
+.frameworks ul #Avanzado {
+  color: #00cf00;
+}
+
+.frameworks ul #Intermedio {
+  color: #dada00;
+}
 
 @media (max-width: 600px) {
   .container {
     width: 98%;
-    margin: auto; } }
+    margin: auto;
+  }
+
+  .content {
+    display: block;
+    margin: auto;
+  }
+
+  .lenguajes,
+  .frameworks {
+    width: 95%;
+    margin: 30px 0;
+  }
+
+}
 
 /*# sourceMappingURL=about.component.css.map */
