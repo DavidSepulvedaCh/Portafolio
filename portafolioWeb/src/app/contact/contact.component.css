@@ -59,7 +59,7 @@
           border-bottom: 1px solid #fff;
           transform: translateY(-3px); }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px), (max-width: 900px) {
   /* Estilos para pantallas menores a 600px */
   .container {
     width: 100%;

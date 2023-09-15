@@ -59,7 +59,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px), (max-width: 900px) {
     /* Estilos para pantallas menores a 600px */
 
     .container {

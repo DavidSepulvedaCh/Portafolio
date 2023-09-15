@@ -38,7 +38,7 @@
         .photo {
             width: 30%;
             height: 350px;
-            background-image: url(../../assets/perfil.jpeg);
+            background-image: url(../../assets/perfil_2.jpg);
             background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
             background-position: center; /* Centra la imagen dentro del contenedor */
             background-repeat: no-repeat;
@@ -188,6 +188,11 @@
         width: 100%;
     }
 }
+#tech {
+    color: #f0f3f4;
+    font-weight: 500;
+    margin: 5px;
+}
 
 .contact {
     width: 100%;
@@ -267,6 +272,68 @@
             width: 100%;
         }
     }
+    .skills,
+    .contact {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: 100%;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10%;
+        width: 100%;
+
+        .information {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        #informatio,
+        #photo {
+            width: 90%;
+        }
+
+        .photo {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    }
+
+    .proyectos {
+        width: 90%;
+
+        .titleComponent {
+            justify-content: flex-start;
+
+            h1 {
+                text-align: start;
+            }
+
+            p {
+                text-align: start;
+            }
+        }
+
+        .projects {
+            .project {
+                width: 95%;
+                margin: 20px 0;
+            }
+        }
+
+        #btnProjects {
+            width: 100%;
+        }
+    }
+
     .skills,
     .contact {
         width: 90%;

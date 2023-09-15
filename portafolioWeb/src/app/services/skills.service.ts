@@ -16,7 +16,9 @@ export class SkillService {
             new Skill('Python', '', 'Lenguaje'),
             new Skill('Angular', '100', 'Framework'),
             new Skill('Bootstrap', '100', 'Framework'),
-            new Skill('Django', '', 'Framework'),
+            new Skill('Node', '', 'Framework'),
+            new Skill('Django Rest', '', 'Framework'),
+
         ];
     }
 

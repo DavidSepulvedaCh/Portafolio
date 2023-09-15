@@ -23,7 +23,7 @@
                     <li *ngFor="let skill of skills">
                         <ng-container *ngIf="skill.type === 'Framework'">
                             <i class="fa-brands" [ngClass]="'fa-' + skill.name.toLowerCase()"></i>
-                            <span *ngIf="skill.name === 'Django'" id="django">Django</span>
+                            <span *ngIf="skill.name === 'Django Rest'" id="django">Django Rest</span>
                         </ng-container>
                     </li>
                 </ul>

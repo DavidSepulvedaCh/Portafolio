@@ -24,8 +24,15 @@
             <p class="description">{{ project.description }}</p>
             <p class="technologies">Tecnologias utilizadas</p>
             <div class="languages">
-                <i *ngFor="let technology of project.technologies" class="fa-brands"
-                    [ngClass]="'fa-' + technology.toLowerCase()"></i>
+                <ng-container *ngFor="let technology of project.technologies">
+                    <ng-container
+                        *ngIf="technology === 'Flutter' || technology === 'Dart' || technology === 'MySQL'; else iconTemplate">
+                        <span id="tech">{{ technology }}</span>
+                    </ng-container>
+                    <ng-template #iconTemplate>
+                        <i class="fa-brands" [ngClass]="'fa-' + technology.toLowerCase()"></i>
+                    </ng-template>
+                </ng-container>
             </div>
         </div>
         <a [routerLink]="['/projects']" id="btnProjects">Ver más proyectos...</a>
