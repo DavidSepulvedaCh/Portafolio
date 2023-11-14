@@ -1,0 +1,34 @@
+<section class="skills">
+    <div class="headerSkills">
+        <p id="title">{{title}}</p>
+        <p id="descriptionSkills"> {{description}} </p>
+    </div>
+    <div class="content">
+        <div class="lenguajes" data-aos="fade-up">
+            <h3 class="titleLenguajes">Lenguajes: </h3>
+            <div class="gg">
+                <ul>
+                    <li *ngFor="let skill of skills">
+                        <ng-container *ngIf="skill.type === 'Lenguaje'">
+                            <i class="fa-brands" [ngClass]="'fa-' + skill.name.toLowerCase()"></i>
+                            <span *ngIf="skill.name === 'MySQL'" id="sql">MySQL</span>
+                        </ng-container>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="frameworks" data-aos="fade-down">
+            <h3 class="titleFrameworks">Frameworks: </h3>
+            <div class="gg">
+                <ul>
+                    <li *ngFor="let skill of skills">
+                        <ng-container *ngIf="skill.type === 'Framework'">
+                            <i class="fa-brands" [ngClass]="'fa-' + skill.name.toLowerCase()"></i>
+                            <span *ngIf="skill.name === 'Django Rest'" id="django">Django Rest</span>
+                        </ng-container>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

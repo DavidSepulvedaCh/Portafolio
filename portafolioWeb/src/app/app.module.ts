@@ -2,22 +2,26 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { routing, appRoutingProvider } from './app.routing';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { AboutComponent } from './about/about.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { ContactComponent } from './contact/contact.component';
-import { FooterComponent } from './footer/footer.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { PresentationCardComponent } from './components/presentation-card/presentation-card.component';
+import { HomeComponent } from './components/home/home.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { ProjectService } from './services/project.service';
+import { SkillsComponent } from './components/skills/skills.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    NavbarComponent,
+    PresentationCardComponent,
     HomeComponent,
-    ProjectsComponent,
-    AboutComponent,
-    NavBarComponent,
+    PortfolioComponent,
+    SkillsComponent,
     ContactComponent,
     FooterComponent
   ],
@@ -26,7 +30,7 @@ import { FooterComponent } from './footer/footer.component';
     AppRoutingModule,
     routing
   ],
-  providers: [appRoutingProvider],
+  providers: [appRoutingProvider, ProjectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,35 @@
+#btnProjects {
+    margin: 70px auto 50px auto;
+    position: relative;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    width: 14%;
+    display: flex;
+    text-decoration: none;
+    color: #004bd7;
+    justify-content: center;
+    text-align: center;
+    padding: 8px;
+    margin-bottom: 30px;
+    background-color: #0150e24f;
+    backdrop-filter: blur(1px);
+    border-radius: 5px;
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #004bd7;
+        transition: width 0.3s ease;
+    }
+    &:hover::after {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #btnProjects {
+        width: 70%;
+    }
+}

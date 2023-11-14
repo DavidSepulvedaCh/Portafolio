@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 100%;
+    margin: 90px auto 40px auto;
+    display: flex;
+    align-items: center;
+}
+
+.information {
+    width: 50%;
+
+    #saludo {
+        font-size: 30px;
+        font-weight: bolder;
+    }
+
+    #nombre {
+        margin-top: -10px;
+        font-size: 45px;
+        font-weight: 700;
+
+        span {
+            color: #004bd7;
+        }
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+
+        li {
+            margin: 10px;
+            i {
+                margin-top: 15px;
+                padding: 10px;
+                font-size: 30px;
+                color: #00205a;
+                &:hover {
+                    cursor: pointer;
+                    color: #004bd7;
+                }
+            }
+        }
+        #git {
+            margin-left: 0px;
+        }
+    }
+
+    .description {
+        margin-top: 15px;
+        width: 95%;
+        text-align: justify;
+        font-size: 20px;
+    }
+}
+
+.photo {
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        border: none;
+        border-radius: 20px;
+    }
+}
+
+#welcom {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 850px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .information {
+        padding: 10px;
+        width: 100%;
+        ul {
+            li {
+                align-content: center;
+            }
+        }
+        .description {
+            width: 100%;
+        }
+    }
+    .photo {
+        width: 90%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #nombre {
+        font-size: 28px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    #welcom {
+        font-size: 16px;
+    }
+}

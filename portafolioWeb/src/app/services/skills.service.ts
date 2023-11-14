@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { Skill } from "../models/skills";
+import { Skill } from "../models/skill";
 
 @Injectable()
 export class SkillService {
@@ -11,7 +11,7 @@ export class SkillService {
             new Skill('Sass', '100', 'Lenguaje'),
             new Skill('JS', '80', 'Lenguaje'),
             new Skill('Java', '80', 'Lenguaje'),
-            new Skill('SQL', '80', 'Lenguaje'),
+            new Skill('MySQL', '80', 'Lenguaje'),
             new Skill('PHP', '80', 'Lenguaje'),
             new Skill('Python', '', 'Lenguaje'),
             new Skill('Angular', '100', 'Framework'),

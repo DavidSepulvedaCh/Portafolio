@@ -1,0 +1,93 @@
+section {
+    width: 100%;
+    margin-top: 50px;
+
+    .headerContact {
+        width: 100%;
+        margin-bottom: 50px;
+
+        .title {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        .descriptionContact {
+            font-size: 20px;
+            font-weight: 400;
+            text-align: right;
+            color: rgb(71, 71, 71);
+        }
+    }
+    .content {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto 30px auto;
+
+        .fila1,
+        .fila2 {
+            align-items: flex-start;
+            margin: 25px auto;
+            section {
+                display: flex;
+                align-items: center;
+                a {
+                    color: #042d78;
+                    text-decoration: none;
+                    font-size: 20px;
+                }
+                i {
+                    color: #042d78;
+                    font-size: 25px;
+                    margin-right: 10px;
+                }
+            }
+            .email,
+            .phone,
+            .git,
+            .linkedin {
+                margin: 15px;
+                transition: transform 0.3s ease;
+                padding: 10px;
+                &:hover {
+                    transform: translateY(-3px);
+                    box-shadow: 0 3px transparent;
+                    background: #97bbff86;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section {
+        width: 100%;
+        margin: 30px auto;
+        padding: 5px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .fila1,
+        .fila2 {
+            width: 100%;
+            align-items: center;
+            margin: 0;
+            section {
+                a {
+                    color: rebeccapurple;
+                    font-size: 15px;
+                    margin-left: -8px;
+                }
+                i {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+<section class="portfolio">
+    <div class="headerPortfolio">
+        <p id="title">{{title}}</p>
+        <p id="descriptionPortfolio">{{description}}</p>
+    </div>
+    <div class="projects">
+        <div class="project" *ngFor="let project of projects">
+            <div class="headerProject">
+                <a (click)="redireccionar(project.link)"><i class="fa fa-github"></i></a>
+                <p>{{project.name}}</p>
+            </div>
+            <img src="{{project.image}}" alt="">
+            <p id="descriptionProject">{{project.description}}</p>
+            <div class="languages">
+                <ng-container *ngFor="let technology of project.technologies">
+                    <ng-container
+                        *ngIf="technology === 'Flutter' || technology === 'Dart' || technology === 'MySQL'; else iconTemplate">
+                        <span class="tech">{{ technology }}</span>
+                    </ng-container>
+                    <ng-template #iconTemplate>
+                        <i class="fa-brands" [ngClass]="'fa-' + technology.toLowerCase()"></i>
+                    </ng-template>
+                </ng-container>
+            </div>
+        </div>
+    </div>
+</section>

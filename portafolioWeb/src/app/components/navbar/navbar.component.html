@@ -1,0 +1,16 @@
+<section class="navbar">
+    <div class="logo">
+        <p class="nameLogo">David Sepúlveda</p>
+        <p class="eslogan">Desarrollador Web <i class="fa fa-code"></i></p>
+    </div>
+    <div class="menu-toggle" (click)="toggleMenu()">
+        <i class="fa fa-bars"></i>
+    </div>
+    <div class="menu" [ngClass]="{ 'show-menu': isMenuOpen }">
+        <ul>
+            <li [routerLink]="['/home']" [routerLinkActive]="['active']">Inicio</li>
+            <li [routerLink]="['/projects']" [routerLinkActive]="['active']">Portafolio</li>
+            <li [routerLink]="['/contact']" [routerLinkActive]="['active']">Contacto</li>
+        </ul>
+    </div>
+</section>
